@@ -6,12 +6,10 @@ Stop wasting the first 10 minutes of every Claude session explaining your projec
 
 ## Installation
 
-```bash
-# Step 1: Add the marketplace
-/plugin marketplace add mariusDing/vibe-ready
+Open Claude Code in any project, type in the chat:
 
-# Step 2: Install the plugin
-/plugin install vibe-ready@vibe-ready
+```
+/plugin marketplace add mariusDing/vibe-ready && /plugin install vibe-ready@vibe-ready
 ```
 
 ## Quick Start
