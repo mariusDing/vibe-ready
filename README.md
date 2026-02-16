@@ -6,11 +6,25 @@ Stop wasting the first 10 minutes of every Claude session explaining your projec
 
 ## Installation
 
-Open Claude Code in any project, type in the chat:
+### Claude Code CLI
+
+Run `claude` in your terminal, then type in the chat:
 
 ```
-/plugin marketplace add mariusDing/vibe-ready && /plugin install vibe-ready@vibe-ready
+/plugin marketplace add mariusDing/vibe-ready
 ```
+
+```
+/plugin install vibe-ready@vibe-ready
+```
+
+### Claude Code Desktop
+
+1. Click **Plugins** in the bottom-left corner
+2. Click **Browse plugins** to open the plugin browser
+3. Click **Add marketplace from GitHub**
+4. Enter `mariusDing/vibe-ready` in the URL field and click **Sync**
+5. Find **vibe-ready** in the plugin list and click **Install**
 
 ## Quick Start
 
