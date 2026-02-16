@@ -1,4 +1,5 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "vibe-ready",
   "owner": {
     "name": "Marius D"
@@ -10,7 +11,7 @@
   "plugins": [
     {
       "name": "vibe-ready",
-      "source": ".",
+      "source": "./",
       "description": "Structured dev workflow with auto-planning, debug flow, and task lifecycle management",
       "version": "1.0.0",
       "category": "productivity",
