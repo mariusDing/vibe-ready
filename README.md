@@ -4,12 +4,19 @@ Make any repo AI-coding-friendly in one command.
 
 Stop wasting the first 10 minutes of every Claude session explaining your project. `vibe-ready` scans your codebase, generates structured documentation, and gives Claude a complete development workflow — planning, execution, debugging, and archiving — out of the box.
 
+## Installation
+
+```bash
+# Step 1: Add the marketplace
+/plugin marketplace add mariusDing/vibe-ready
+
+# Step 2: Install the plugin
+/plugin install vibe-ready@vibe-ready
+```
+
 ## Quick Start
 
 ```bash
-# Install the plugin
-claude /plugin add /path/to/vibe-ready
-
 # Open your repo and initialize
 /vibe-ready:init
 
