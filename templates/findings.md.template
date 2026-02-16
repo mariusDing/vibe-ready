@@ -1,0 +1,18 @@
+# Findings: {{TASK_TITLE}}
+
+## Codebase Analysis
+- {{FINDING_1}}
+- {{FINDING_2}}
+
+## Existing Patterns
+- {{PATTERN_1}}
+
+## Dependencies
+- {{EXTERNAL_DEPENDENCY_1}}
+- {{INTERNAL_MODULE_1}}
+
+## Risks & Edge Cases
+- {{RISK_1}}
+
+## Notes
+- {{NOTE_1}}

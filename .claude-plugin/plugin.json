@@ -1,0 +1,11 @@
+{
+  "name": "vibe-ready",
+  "description": "Make any repo AI-coding-friendly in one command. Structured dev workflow with auto-planning, debug flow, and task lifecycle management.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Marius D"
+  },
+  "repository": "https://github.com/mariusDing/vibe-ready",
+  "license": "MIT",
+  "keywords": ["workflow", "planning", "debugging", "multi-agent", "productivity"]
+}

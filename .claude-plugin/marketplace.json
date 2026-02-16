@@ -1,0 +1,20 @@
+{
+  "name": "vibe-ready",
+  "owner": {
+    "name": "Marius D"
+  },
+  "metadata": {
+    "description": "Make any repo AI-coding-friendly in one command",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "vibe-ready",
+      "source": ".",
+      "description": "Structured dev workflow with auto-planning, debug flow, and task lifecycle management",
+      "version": "1.0.0",
+      "category": "productivity",
+      "tags": ["workflow", "planning", "debugging", "multi-agent"]
+    }
+  ]
+}

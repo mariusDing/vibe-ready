@@ -1,0 +1,50 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/scripts/prompt-context.js\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/scripts/pre-write.js\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/scripts/post-write.js\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Find your active workspace: first check .plans/{$CLAUDE_SESSION_ID}/ (fallback 'default'). If no task_plan.md there, scan .plans/ for any other directory (except 'archive') that contains a non-empty task_plan.md — that is an orphaned workspace you should resume.\n\nOnce you find the active workspace:\n1. If ALL phases have status 'complete', respond: {\"decision\":\"block\",\"reason\":\"All phases complete. Ask the user: Does this task look complete?\"}\n2. If any phase is 'pending' or 'in_progress', respond: {\"decision\":\"block\",\"reason\":\"Phases incomplete. Continue working or ask user.\"}\n3. If no active workspace found (no task_plan.md anywhere), respond: {}.",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

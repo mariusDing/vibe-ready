@@ -1,0 +1,40 @@
+# {{PROJECT_NAME}}
+
+{{PROJECT_DESCRIPTION}}
+
+## Tech Stack
+{{TECH_STACK}}
+
+## Directory Map
+{{DIRECTORY_MAP}}
+
+## Development Rules
+
+### Language Rule
+- **ALL generated and modified .md files MUST be written in English**, regardless of the user's language.
+
+### Agent Workspace
+- Your workspace: `.plans/{session_id}/` (use $CLAUDE_SESSION_ID, fallback to `default`)
+- NEVER read/write another agent's workspace
+- Archive at `.plans/archive/` is shared read-only reference
+
+### When you receive any dev task:
+1. Check `.plans/{session_id}/task_plan.md`
+   - Has content → resume from last progress
+   - Empty/missing → this is a new task
+2. For new tasks: read docs/module-index.md first to locate relevant modules
+3. Then read ONLY the relevant doc:
+
+| Task involves | Read first |
+|--------------|------------|
+{{TASK_DOC_MAP}}
+| Unknown area | docs/module-index.md |
+
+4. Never read all docs/ at once
+
+### Coding Standards
+{{CODING_STANDARDS}}
+
+### Compact Rules
+Preserve: task plan, modified files, unresolved errors
+Discard: completed phase details, resolved investigation logs

@@ -1,0 +1,8 @@
+# Progress: {{TASK_TITLE}}
+
+## Session: {{SESSION_ID}}
+## Current Phase: Phase 1 — {{PHASE_1_NAME}}
+## Status: Not started
+
+## Log
+- {{TIMESTAMP_ISO8601}} Plan created

@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# vibe-ready: ignore active agent workspaces, keep archive
+.plans/*/
+!.plans/archive/
+
+# vibe-ready: user config (project-specific)
+.vibe-ready.json

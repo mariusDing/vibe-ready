@@ -1,0 +1,34 @@
+# Task: {{TASK_TITLE}}
+
+## Agent Session
+- Session ID: {{SESSION_ID}}
+- Started: {{TIMESTAMP_ISO8601}}
+
+## Summary
+{{TASK_SUMMARY}}
+
+## Affected Modules
+{{AFFECTED_MODULES}}
+
+## Phases
+
+### Phase 1: {{PHASE_1_NAME}} — `pending`
+**Goal:** {{PHASE_1_GOAL}}
+**Files:**
+- [ ] `{{FILE_PATH}}` — {{FILE_ACTION}}
+**Verify:** `{{VERIFY_COMMAND}}`
+**Acceptance:** {{PHASE_1_ACCEPTANCE}}
+
+### Phase 2: {{PHASE_2_NAME}} — `pending`
+**Goal:** {{PHASE_2_GOAL}}
+**Files:**
+- [ ] `{{FILE_PATH}}` — {{FILE_ACTION}}
+**Verify:** `{{VERIFY_COMMAND}}`
+**Acceptance:** {{PHASE_2_ACCEPTANCE}}
+
+### Phase 3: Testing & Verification — `pending`
+**Goal:** Run full test suite and verify no regressions
+**Files:**
+- [ ] `{{TEST_FILE_PATH}}` — {{TEST_ACTION}}
+**Verify:** `{{FULL_TEST_COMMAND}}`
+**Acceptance:** All tests pass, no regressions
